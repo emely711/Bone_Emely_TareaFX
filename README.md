@@ -70,7 +70,7 @@ TAREA_FX
 
 ## Instrucciones de Ejecución
 
-1. Clonar o descargar el repositorio.
+1. Descargar el repositorio.
 2. Abrir el proyecto en IntelliJ IDEA.
 3. Esperar que Maven descargue las dependencias.
 4. Ejecutar la clase HelloApplication.
