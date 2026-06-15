@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.tarea_fx.DashboardController">
+
+    <left>
+        <VBox spacing="10"
+              prefWidth="220"
+              style="-fx-background-color:#A855F7;">
+
+            <padding>
+                <Insets top="20" right="15" bottom="20" left="15"/>
+            </padding>
+
+            <Label text="🛒 MI TIENDA"
+                   style="-fx-text-fill:white;-fx-font-size:20px;-fx-font-weight:bold;"/>
+
+            <Label text="Administrador"
+                   style="-fx-text-fill:white;"/>
+
+            <Separator/>
+
+            <Button text="Inicio"/>
+            <Button text="Productos"/>
+            <Button text="Categorías"/>
+            <Button text="Clientes"/>
+            <Button text="Ventas"/>
+            <Button text="Reportes"/>
+            <Button text="Usuarios"/>
+            <Button text="Cerrar Sesión"/>
+
+        </VBox>
+    </left>
+
+    <center>
+
+        <VBox spacing="15">
+
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+
+            <Label text="GESTIÓN DE PRODUCTOS"
+                   style="-fx-font-size:24px;-fx-font-weight:bold;"/>
+
+            <GridPane hgap="10" vgap="10">
+
+                <Label text="Código"/>
+                <TextField GridPane.columnIndex="1"
+                           promptText="Ingrese código"/>
+
+                <Label text="Nombre"
+                       GridPane.rowIndex="1"/>
+                <TextField GridPane.columnIndex="1"
+                           GridPane.rowIndex="1"
+                           promptText="Ingrese nombre"/>
+
+                <Label text="Categoría"
+                       GridPane.rowIndex="2"/>
+                <ComboBox GridPane.columnIndex="1"
+                          GridPane.rowIndex="2"/>
+
+                <Label text="Precio"
+                       GridPane.rowIndex="3"/>
+                <TextField GridPane.columnIndex="1"
+                           GridPane.rowIndex="3"
+                           promptText="0.00"/>
+
+                <Label text="Stock"
+                       GridPane.rowIndex="4"/>
+                <TextField GridPane.columnIndex="1"
+                           GridPane.rowIndex="4"
+                           promptText="0"/>
+
+                <Label text="Estado"
+                       GridPane.rowIndex="5"/>
+                <ComboBox GridPane.columnIndex="1"
+                          GridPane.rowIndex="5"/>
+
+            </GridPane>
+
+            <HBox spacing="10">
+
+                <Button text="Nuevo"/>
+                <Button text="Guardar"/>
+                <Button text="Actualizar"/>
+                <Button text="Eliminar"/>
+                <Button text="Limpiar"/>
+
+            </HBox>
+
+            <TableView prefHeight="300">
+
+                <columns>
+
+                    <TableColumn text="Código"/>
+                    <TableColumn text="Nombre"/>
+                    <TableColumn text="Categoría"/>
+                    <TableColumn text="Precio"/>
+                    <TableColumn text="Stock"/>
+                    <TableColumn text="Estado"/>
+
+                </columns>
+
+            </TableView>
+
+        </VBox>
+
+    </center>
+
+</BorderPane>

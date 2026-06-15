@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.tarea_fx.LoginController"
+      alignment="CENTER"
+      spacing="15">
+
+    <padding>
+        <Insets top="30" right="30" bottom="30" left="30"/>
+    </padding>
+
+    <Label text="MI TIENDA - LOGIN"/>
+
+    <TextField fx:id="txtUsuario"
+               promptText="Usuario"/>
+
+    <PasswordField fx:id="txtPassword"
+                   promptText="Contraseña"/>
+
+    <ComboBox fx:id="cmbRol"
+              promptText="Seleccione Rol"/>
+
+    <Button text="Ingresar"
+            onAction="#ingresar"/>
+
+</VBox>
