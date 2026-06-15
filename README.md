@@ -6,8 +6,6 @@ La Tienda es una aplicación desarrollada en JavaFX que permite gestionar produc
 
 ## Captura del Dashboard
 
-Agregar aquí una captura de pantalla del dashboard ejecutándose.
-
 <img width="1353" height="702" alt="image" src="https://github.com/user-attachments/assets/837e4c00-20aa-48fe-81ea-a88e76558d34" />
 
 
